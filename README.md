@@ -32,14 +32,19 @@
 
 ## Introducción
 
+Este documento tiene como propósito describir la arquitectura global del proyecto *VideoCloud*, básandose en el modelo arquitectónico orientado a servicios cuyas características orientadas a *funcionalidad*, *Mantenibilidad*, *Eficiencia*, *Usabilidad* y *Confiabilidad* en conjunto con la implementación de tecnologías Web (API) proporcionan una solución viable para los requisitos y necesidades obtenidos para dicho proyecto.
+
+Este documento incluye el propósito, alcance, referencias y un resumen del sistema.
 
 ### Propósito
 
-El documento de arquitectura tiene como finalidad proveer una descripción comprensible de la arquitectura del proyecto SongCloud. Se presentan un conjunto de arquitecturas basadas en capas y componentes que muestran diferentes aspectos del sistema, también se enfoca en recopilar las decisiones arquitecturales que se han definido en este proyecto.
+El documento de arquitectura tiene como finalidad proveer una descripción comprensible de la arquitectura del proyecto VideoCloud. Se presentan un conjunto de arquitecturas basadas en capas y componentes que muestran diferentes aspectos del sistema, también se enfoca en recopilar las decisiones arquitecturales que se han definido en este proyecto.
+
+Para representar el software con la mayor simpleza posible, la estructura de este documento se basa en la arquitectura en capas, cuya finalidad es dividir la aplicación en capas, con la intención de que cada capa tenga un rol muy definido.
 
 ### Alcance
 
-El documento de arquitectura contendrá todos los componentes arquitectónicos a usarse en el proyecto SongCloud. Se pretende proveer una fuente de referencia para todos los involucrados en el proyecto. El contenido de este documento es de carácter técnico-informativo, de uso exclusivo de la empresa y/o cliente.
+El documento de arquitectura contendrá todos los componentes arquitectónicos a usarse en el proyecto VideoCloud. Se pretende proveer una fuente de referencia para todos los involucrados en el proyecto. El contenido de este documento es de carácter técnico-informativo, de uso exclusivo de la empresa y/o cliente.
 
 El contenido aquí presentado solamente será accedido y modificado bajo los lineamientos establecidos por el equipo de trabajo.
 
