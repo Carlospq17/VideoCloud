@@ -113,10 +113,27 @@ Para una descripción más precisa de las entidades involucradas en la base de d
 
 ## Criterios de calidad
 
-> Para los criterios de calidad de acuerdo a la ISO/IEC
-
 - Funcionalidad
+
+      Se refiere a la capacidad del producto de software para suministrar un conjunto de funciones que satisfagan als necesidades implícitas o explícitas de los usuarios, al ser utilizado bajo condiciones específicas.
+      Para asegurar este criterio de calidad, el equipo de trabajo manejara distintas técnicas de verificación y validación de software (pruebas e inspecciones).
+
 - Mantenibilidad
+
+      Propiedad de un sistema que representa la cantidad de esfuerzo requerida para conservar su funcionamiento normal o para restituirlo una vez se ha presentado un evento de falla.
+      Para asegurar este criterio de calidad, el equipo de trabajo mantendrá distintos patrones de diseño, así como distintas técnicas de construcción de código basadas en Clean Code.
+
 - Eficiencia
-- Usabilidad
-- Confiabilidad
+
+      Esta característica principal se refiere a la capacidad del producto de software para proporcionar un desemepño apropiado.
+      Para asegurar este criterio de calidad, el equipo de trabajo planea 
+
+- Seguridad
+
+      Esta caracteristica hace referencia a la capacidad del software para proteger los datos y la informacion.
+      La aplicación contara con manejo de sesiones para restringir el acceso a la información de los usuarios, también se utiliza el estándar Json Web Token para el encriptamiento de la información.
+
+- Portabilidad
+
+      La portabilidad se define como la caraterística que posee un software para ejecutarse en diferentes plataformas.
+      El equipo de trabajo planea utilziar Docker para gestionar el despliegue de la aplicacion en contenedores y esta sea compatible con cualquier SO que tenga instalado Docker Machine.
