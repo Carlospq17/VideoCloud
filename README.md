@@ -32,14 +32,19 @@
 
 ## Introducción
 
+Este documento tiene como propósito describir la arquitectura global del proyecto *VideoCloud*, básandose en el modelo arquitectónico orientado a servicios cuyas características orientadas a *funcionalidad*, *Mantenibilidad*, *Eficiencia*, *Usabilidad* y *Confiabilidad* en conjunto con la implementación de tecnologías Web (API) proporcionan una solución viable para los requisitos y necesidades obtenidos para dicho proyecto.
+
+Este documento incluye el propósito, alcance, referencias y un resumen del sistema.
 
 ### Propósito
 
-El documento de arquitectura tiene como finalidad proveer una descripción comprensible de la arquitectura del proyecto SongCloud. Se presentan un conjunto de arquitecturas basadas en capas y componentes que muestran diferentes aspectos del sistema, también se enfoca en recopilar las decisiones arquitecturales que se han definido en este proyecto.
+El documento de arquitectura tiene como finalidad proveer una descripción comprensible de la arquitectura del proyecto VideoCloud. Se presentan un conjunto de arquitecturas basadas en capas y componentes que muestran diferentes aspectos del sistema, también se enfoca en recopilar las decisiones arquitecturales que se han definido en este proyecto.
+
+Para representar el software con la mayor simpleza posible, la estructura de este documento se basa en la arquitectura en capas, cuya finalidad es dividir la aplicación en capas, con la intención de que cada capa tenga un rol muy definido.
 
 ### Alcance
 
-El documento de arquitectura contendrá todos los componentes arquitectónicos a usarse en el proyecto SongCloud. Se pretende proveer una fuente de referencia para todos los involucrados en el proyecto. El contenido de este documento es de carácter técnico-informativo, de uso exclusivo de la empresa y/o cliente.
+El documento de arquitectura contendrá todos los componentes arquitectónicos a usarse en el proyecto VideoCloud. Se pretende proveer una fuente de referencia para todos los involucrados en el proyecto. El contenido de este documento es de carácter técnico-informativo, de uso exclusivo de la empresa y/o cliente.
 
 El contenido aquí presentado solamente será accedido y modificado bajo los lineamientos establecidos por el equipo de trabajo.
 
@@ -125,10 +130,27 @@ Para una descripción más precisa de las entidades involucradas en la base de d
 
 ## Criterios de calidad
 
-> Para los criterios de calidad de acuerdo a la ISO/IEC
-
 - Funcionalidad
+
+Se refiere a la capacidad del producto de software para suministrar un conjunto de funciones que satisfagan als necesidades implícitas o explícitas de los usuarios, al ser utilizado bajo condiciones específicas.
+Para asegurar este criterio de calidad, el equipo de trabajo manejara distintas técnicas de verificación y validación de software (pruebas e inspecciones).
+
 - Mantenibilidad
+
+Propiedad de un sistema que representa la cantidad de esfuerzo requerida para conservar su funcionamiento normal o para restituirlo una vez se ha presentado un evento de falla.
+Para asegurar este criterio de calidad, el equipo de trabajo mantendrá distintos patrones de diseño, así como distintas técnicas de construcción de código basadas en Clean Code.
+
 - Eficiencia
-- Usabilidad
-- Confiabilidad
+
+Esta característica principal se refiere a la capacidad del producto de software para proporcionar un desemepño apropiado.
+Para asegurar este criterio de calidad, el equipo de trabajo planea 
+
+- Seguridad
+
+Esta caracteristica hace referencia a la capacidad del software para proteger los datos y la informacion.
+La aplicación contara con manejo de sesiones para restringir el acceso a la información de los usuarios, también se utiliza el estándar Json Web Token para el encriptamiento de la información.
+
+- Portabilidad
+
+La portabilidad se define como la caraterística que posee un software para ejecutarse en diferentes plataformas.
+El equipo de trabajo planea utilizar Docker para gestionar el despliegue de la aplicación en contenedores y esta sea compatible con cualquier SO que tenga instalado Docker Machine.
