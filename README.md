@@ -68,7 +68,7 @@ Los microservicios se tratan de un estilo arquitectónico mediante el cual una a
 
 Esto quiere decir que permite un despliegue rápido, frecuente y confiable de aplicaciones grandes y complejas. Es un elemento fundamental de la optimización del desarrollo de aplicaciones hacia un modelo nativo de la **nube**.
 
-![alt text](http://localhost/~carlospool/Nube/VideoCloud/resources/1*xu1Ge_Cew0DHdSU6ETcpLQ.png "Arquitectura de Microservicios")
+![alt text](resources/1*xu1Ge_Cew0DHdSU6ETcpLQ.png "Arquitectura de Microservicios")
 
 Cada función se denomina servicio y se puede diseñar e implementar de forma independiente. Es más, desarrollar utilizando este estilo arquitectónico provee beneficios como:
 * Aplicaciones más rápidas para comercializarse
@@ -88,7 +88,7 @@ Cada función se denomina servicio y se puede diseñar e implementar de forma in
 
 ### Diagrama de la base de datos
 
-![alt text](http://localhost/~carlospool/Nube/VideoCloud/resources/StreamServiceAPI.png "Diagrama de la base de datos para SongCloud")
+![alt text](resources/StreamServiceAPI.png "Diagrama de la base de datos para SongCloud")
 
 ### Descripción de las entidades
 
@@ -96,7 +96,7 @@ Para una descripción más precisa de las entidades involucradas en la base de d
 
 ### Diagrama entidad-relación
 
-![alt text](http://localhost/~carlospool/Nube/VideoCloud/resources/Diagrama%20ER.png "Diagrama entidad-relación para SongCloud")
+![alt text](resources/Diagrama%20ER.png "Diagrama entidad-relación para SongCloud")
 
 ---
 
