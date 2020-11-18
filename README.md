@@ -54,9 +54,9 @@ El contenido aquí presentado solamente será accedido y modificado bajo los lin
 - What are microservices? (s. f.). microservices.io. Recuperado 17 de noviembre de 2020, de https://microservices.io/
 - ¿Qué son los microservicios? (s. f.). Redhat. Recuperado 17 de noviembre de 2020, de https://www.redhat.com/es/topics/microservices/what-are-microservices
 
-https://www.javatpoint.com/spring-boot-architecture
+- Spring Boot Architecture - javatpoint. (s. f.). www.javatpoint.com. Recuperado 17 de noviembre de 2020, de https://www.javatpoint.com/spring-boot-architecture
 
-https://www.researchgate.net/figure/ADVANTAGES-and-DRAWBACKS-of-LAYERED-APPROACH_tbl1_291075332
+- Chenna Reddy, P., & Vivekananda, G. (2015, agosto). ADVANTAGES-and-DRAWBACKS-of-LAYERED-APPROACH. ResearchGate. https://www.researchgate.net/figure/ADVANTAGES-and-DRAWBACKS-of-LAYERED-APPROACH_tbl1_291075332
 
 ---
 
@@ -106,7 +106,29 @@ Cada función se denomina servicio y se puede diseñar e implementar de forma in
 
 ### Diagrama de secuencia para los procesos descritos en la descripción de la App 1 y la App 2
 
-> Diagrama de secuencias
+- Para el caso de la aplicación 1. 
+  - Esta es la encargada de:
+    - Obtención de los videos
+    - Etiquetado de los videos
+    - Clasficiación de los videos
+    - Stream de los videos
+    - Subida de los videos
+
+Se presenta el siguiente diagrama de secuencias
+![alt text](resources/SeqDiagApp1_1.jpeg "Diagrama de secuencias para al aplicación 1 de VideoCloud parte 1")
+
+  - Al mismo tiempo, se encarga de:
+    - Crud para los usuarios
+
+Se presenta el siguiente diagrama de secuencias
+![alt text](resources/SeqDiag_App1_2.jpeg "Diagrama de secuencias para al aplicación 1 de VideoCloud parte 2")
+
+- Para el caso de la aplicación 2.
+  - Esta es la encargada de:
+    - Realizar recomendaciones de forma asíncrona
+
+Se presenta el siguiente diagrama de secuencias
+![alt text](resources/SeqDiagApp2.jpeg "Diagrama de secuencias para la aplicación 2 de VideoCloud")
 
 ### Diagrama de la base de datos
 
@@ -118,13 +140,14 @@ Para una descripción más precisa de las entidades involucradas en la base de d
 
 ### Diagrama entidad-relación
 
-![alt text](resources/Diagrama%20ER.png "Diagrama entidad-relación para VideoCloud")
+![alt text](resources/Diagrama%20ER.png "Diagrama entidad-relación para VideoClou d")
 
 ---
 
 ## Documentación de la API
 
-> Aquí metemos un buen y rico POSTMAN (Si es posible)
+Para la documentación de los endpoints de la API se anexa el siguiente enlace:
+https://www.getpostman.com/collections/2eb583c7bdb530f1bda0
 
 ---
 
