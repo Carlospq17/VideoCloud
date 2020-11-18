@@ -49,13 +49,30 @@ El contenido aquí presentado solamente será accedido y modificado bajo los lin
 - What are microservices? (s. f.). microservices.io. Recuperado 17 de noviembre de 2020, de https://microservices.io/
 - ¿Qué son los microservicios? (s. f.). Redhat. Recuperado 17 de noviembre de 2020, de https://www.redhat.com/es/topics/microservices/what-are-microservices
 
+https://www.javatpoint.com/spring-boot-architecture
+
+https://www.researchgate.net/figure/ADVANTAGES-and-DRAWBACKS-of-LAYERED-APPROACH_tbl1_291075332
+
 ---
 
 ## Arquitectura
 
 ### Descripción de la arquitectura utilizada (Capas)
 
-> Meter la cosa de capas
+Para el desarrollo de este proyecto se sigue una arquitectura basada en capas, esto para aprovechar que el framework(SpringBoot) que utilizamos ya la soporta y además encaja dentro de las necesidades del proyecto que se desarrolla.
+
+Las capas que esta arquitectura presenta son las siguientes:
+  - Rest : Capa encargada de cuestiones como la autentificación y la conversión de los JSON que reciba de la capa de abajo
+  
+  &#8595;
+  - Service: Capa encargada de la lógica del programa, validaciones y autorizaciones. En esta capa se inlcuiran los microservicios como el módulo para hacer streaming y el módulo para las recomendaciones de los videos
+
+  &#8595;
+  - Repository: Capa encargada de crear las conexiones hacia las herramientas de persistencia con las |que se cuente, dicho de otras palabras, la capa que se conecta a la base de datos.
+
+Así pues, contará con un modelo que será el que ayude para la parte de JPA. Y finalmente, debido a que este enfoque la construcción de un sistema robusto, se tendrá un apartado de excepciones a lo largo de todas las capas, esto para poder lanzar las excepciones correspondientes desde el momento que alguna capa no responda apropiadamente.
+
+Siguiendo con las partes involucradas en la arquitectura de este proyecto, los usuarios serán quienes tendrán contacto con el sistema através de la capa REST. Ahora bien, en el lado de la persistencia de los datos, la base de datos sólo tendrá interacciones mediante la capa repository.
 
 ### Definición teórica de Microservicios
 
@@ -80,7 +97,7 @@ Cada función se denomina servicio y se puede diseñar e implementar de forma in
 
 ### Diagrama de arquitectura con descripción
 
-> Diagrama de la arquitectura con sus respectivas descripción
+![alt text](resources/Diagrama_de_la_Arquitectura.png "Diagrama de la Arquitectura de capas para VideoCloud")
 
 ### Diagrama de secuencia para los procesos descritos en la descripción de la App 1 y la App 2
 
@@ -88,7 +105,7 @@ Cada función se denomina servicio y se puede diseñar e implementar de forma in
 
 ### Diagrama de la base de datos
 
-![alt text](resources/StreamServiceAPI.png "Diagrama de la base de datos para SongCloud")
+![alt text](resources/StreamServiceAPI.png "Diagrama de la base de datos para VideoCloud")
 
 ### Descripción de las entidades
 
@@ -96,7 +113,7 @@ Para una descripción más precisa de las entidades involucradas en la base de d
 
 ### Diagrama entidad-relación
 
-![alt text](resources/Diagrama%20ER.png "Diagrama entidad-relación para SongCloud")
+![alt text](resources/Diagrama%20ER.png "Diagrama entidad-relación para VideoCloud")
 
 ---
 
