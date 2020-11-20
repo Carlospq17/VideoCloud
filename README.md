@@ -136,7 +136,7 @@ Se presenta el siguiente diagrama de secuencias
 
 ### Descripción de las entidades
 
-Para una descripción más precisa de las entidades involucradas en la base de datos, se anexa a continuación el siguiente documento de [diseño de la base de datos](https://docs.google.com/document/d/1nUIwVgMMC-rgfiYJIb37Z4NiLlI71eAl7fttU49Pfq0/edit?usp=sharing)
+Para una descripción más precisa de las entidades involucradas en la base de datos, se anexa a continuación el siguiente documento de [diseño de la base de datos](database.md)
 
 ### Diagrama entidad-relación
 
