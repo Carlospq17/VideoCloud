@@ -81,7 +81,7 @@ Ciertas convenciones fueron seguidas en este documento.
 | ***id_video*** | integer(10) | Clave del video | | No | Unique Index | Este campo es la clave única del video |
 | *titulo* | varchar(100) | titulo del video | | No | | Este campo es el título asociado al video |
 | ***autor*** | integer(10) | Autor del video | | No | | Este campo representa el usuario autor del video. Hace referencia a la tabla **users** |
-| *average_score* | float | Puntaje promedio | | Si | | Este canoi es el puntaje promedio del video |
+| *average_score* | float | Puntaje promedio | | Si | | Este campo es el puntaje promedio del video |
 | *created_at* | timestamp | Fecha de creación | | No | | Este campo se llena automáticamente por parte de la base de datos. Es usado para identificar el día en que se creó el registro |
 | *video_location* | text | Ubicación del video | | No | | Este campo guarda la URL que hace referencia al video almacenado |
 
